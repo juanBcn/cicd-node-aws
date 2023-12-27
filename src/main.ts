@@ -7,7 +7,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Users example')
-    .setDescription('The users API description')
+    .setDescription('The users API description deployed via GH actions')
     .setVersion('1.0')
     .addTag('users')
     .build();

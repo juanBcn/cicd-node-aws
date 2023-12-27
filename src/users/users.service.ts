@@ -3,7 +3,6 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Logger } from '@nestjs/common';
 
-
 @Injectable()
 export class UsersService {
   logger: Logger;
@@ -11,8 +10,9 @@ export class UsersService {
   constructor() {
     this.logger = new Logger();
   }
-  
+
   create(createUserDto: CreateUserDto) {
+    this.logger.log('createUserDto: ' + createUserDto);
     return 'This action adds a new user';
   }
 
@@ -26,6 +26,7 @@ export class UsersService {
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
+    this.logger.log('updateUserDto: ' + updateUserDto);
     return `This action updates a #${id} user`;
   }
 
