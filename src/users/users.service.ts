@@ -12,6 +12,7 @@ export class UsersService {
   }
 
   create(createUserDto: CreateUserDto) {
+    this.logger.log('createUserDto: ' + createUserDto);
     return 'This action adds a new user';
   }
 
@@ -25,6 +26,7 @@ export class UsersService {
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
+    this.logger.log('updateUserDto: ' + updateUserDto);
     return `This action updates a #${id} user`;
   }
 
