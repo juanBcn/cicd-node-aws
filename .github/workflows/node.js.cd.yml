@@ -16,7 +16,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: e1-west-1
+        aws-region: eu-west-1
 
     - name: Iniciar sesión en AWS ECR
       id: login-ecr
@@ -41,7 +41,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: e1-west-1
+          aws-region: eu-west-1
  
       - name: Actualizar versión en ECS
         run: |
