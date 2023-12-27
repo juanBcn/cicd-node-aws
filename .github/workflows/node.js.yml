@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     name: 🚀 Lint and test
     timeout-minutes: 5
+    strategy:
+      matrix:
+        node-version: [18.x]
     steps:
       - name: 👍 Checkout
         uses: actions/checkout@v2
