@@ -24,9 +24,20 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A working example of NestJS app deployed using [AWS ECS](https://aws.amazon.com/ecs/) with [AWS Fargate](https://aws.amazon.com/fargate/) as the compute engine. Based on [terraform-fargate-example](https://registry.terraform.io/modules/terraform-aws-modules/ecs/aws/latest/examples/fargate) & [NestJS starter](https://github.com/nestjs/typescript-starter).
 
-## Installation
+
+## Build (not automated yet, to support deployment process)
+
+### One Time Setup
+- create the ECR in AWS manually
+- execute `ecr-login.sh`
+
+## IaC Deployment
+- `cd iac`
+- `terraform apply`
+
+## App local Installation
 
 ```bash
 $ npm install
