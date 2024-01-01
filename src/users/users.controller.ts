@@ -17,6 +17,7 @@ export class UsersController {
 
   @Post()
   create(@Body() createUserDto: CreateUserDto) {
+    const constantQueNoEsFaServir = 1;
     return this.usersService.create(createUserDto);
   }
 
